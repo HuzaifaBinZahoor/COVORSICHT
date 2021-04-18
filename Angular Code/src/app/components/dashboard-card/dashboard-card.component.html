@@ -1,0 +1,79 @@
+<script type="text/javascript" src="//www.turnjs.com/lib/turn.min.js "></script>
+
+<div class="containerMain">
+
+    <div  class="topleftTable" >
+
+        <table style="margin-left: 35%;margin-top:10px"  >
+            <thead>
+        
+                <tr>
+                    <th style="text-align: center; padding:10px; font-size: 19px;"> Total Cases (State) </th>
+                    <th style="text-align: center; padding:10px; font-size: 19px;"> Total Cases (Area)  </th>
+                    <th style="text-align: center;padding:10px;font-size: 19px;"> Date </th>
+                </tr>
+        
+        
+             
+            </thead>
+        
+            <tbody>
+                    
+                <tr  *ngFor = "let maphttp of maphttps "  >
+        
+                    <td style="font-size: larger;"> {{  maphttp.newCases }} </td>      
+                    <td *ngFor = "let mapcity of maphttpsCity " style="font-size: larger;"> {{  mapcity.newCases }} </td>
+                    <td style="font-size: larger;"> {{  maphttp.date }} </td>
+                    
+                </tr>
+        
+               
+        
+            </tbody>
+        
+        </table>
+        
+
+    </div>
+
+    <div class="toprightSafe">
+
+        <table>
+            <thead>
+        
+                
+             
+            </thead>
+        
+            <tbody>
+                    
+                <tr *ngFor = "let maphttpCity of maphttpsCity " >
+        
+                    <td>                  
+                        
+                        <h2 *ngIf = "maphttpCity.alert == 0 ; then ifBlock else elseBlock">  </h2>
+                        
+                        <ng-template #ifBlock>
+                            <h3 style="color: green;padding-left: 330px;font-size:25px;margin-top:25px"><b>You are in Safe Zone</b></h3>                    
+                        </ng-template> 
+                        
+                        <ng-template #elseBlock>
+                            <h3 style="color: red;;padding-left: 330px;font-size:25px;margin-top:25px"><b>You are in Red Zone</b></h3>                    
+                        </ng-template>  
+                    </td>
+                </tr>
+        
+            </tbody>
+        
+        </table>
+
+    </div>
+
+    
+    
+    
+
+</div>
+
+
+

@@ -1,0 +1,84 @@
+
+
+<div class="containerEmail" style="padding-bottom: 5%;">
+
+
+  <form (ngSubmit) = "onSubmit()"> 
+
+    <h2 style="margin-left: 15%;padding-top: 7px;"> Subscribe for Notifications </h2>
+    
+
+
+    <!-- <div class="form-group" style="margin-left: 300px;"> -->
+    <div class="form-group"  class="toprightEmail" style="margin-top:35px ;">
+      <label><b>Email address</b></label>
+      <input type="text" class="form-control" id="email"  [(ngModel)] = "email.email" name="email">
+      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+  
+    <!-- <div class="form-group" style="margin-left: 300px;"> -->
+      <div class="form-group" class="topleftEmail" style="margin-top:35px">
+  
+      <label><b>City Name </b></label>
+      <!-- <input type="number" class="form-control" id="Id" [(ngModel)] = "email.Id" name="Id" value="4504" > --> 
+  
+      <select class="custom-select form-control" id="Id" [(ngModel)]="email.Id" name="Id">
+        <option value="4504" selected>Frankfurt am Main</option>
+        <option value="4631">Unna</option>
+        <option value="4630">Steinfurt</option>
+        <option value="4629">Städteregion Aachen</option>
+        <option value="4626">Siegen-Wittgenstein</option>
+        <option value="4625">Rhein-Sieg-Kreis</option>
+        <option value="4624">Rhein-Kreis Neuss</option>
+        <option value="4623">Rheinisch-Bergischer Kreis</option>
+        <option value="4622">Rhein-Erft-Kreis</option>
+        <option value="4723">Steinburg</option>
+        <option value="4713">Kiel</option>
+        <option value="4703">Magdeburg</option>
+        <option value="4701">Harz</option>
+        <option value="4686">Leipzig</option>
+        <option value="4683">Dresden</option>
+        <option value="4682">Chemnitz</option>
+        <option value="4659">Neuwied</option>
+        <option value="4655">Mainz</option>
+        <option value="4651">Koblenz</option>
+        <option value="4648">Germersheim</option>
+        <option value="4321">Baden-Württemberg</option>
+        <option value="4335">Heidelberg</option>
+        <option value="4346">Mannheim</option>
+
+      </select>
+  
+  
+    </div>
+  
+  
+      <!-- <div style="margin-left: 600px; margin-top: -70px;"> -->
+        <div >
+        <button type="submit" class="btn btn-primary" style="margin-left: 640px;margin-top:10px">Subscribe</button>
+
+        
+        
+
+        <!-- <div style="width: 17.5%;margin-left:404px;margin-top: -35px;"> 
+          <button class="form-control" (click)="sendReportEmail()" >Send Report to Email</button>
+        </div> -->
+
+
+      </div>
+      
+      
+  
+      
+      
+    </form>
+
+    <div style="width: 19%;margin-left:150px;padding-top: 5px;"> 
+      <button class="form-control" (click)="download()" >Download Report</button>
+    </div>
+
+  
+
+
+</div>
+

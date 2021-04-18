@@ -1,0 +1,74 @@
+<div class="ui inverted dimmer" [class.active]='loading'>
+    <div class="ui text loader">Loading</div>
+</div>
+
+<div class="jumbotron bg-white text-center p-0 m-0">
+    <app-dashboard-card [totalConfirmed]='totalConfirmed' [totalActive]='totalActive' [totalRecovered]='totalRecovered' [totalDeaths]='totalDeaths'></app-dashboard-card>
+
+</div>
+
+<hr>
+
+
+<div id="main_container">
+    
+    <div id="leftside">
+        
+        <div class="inline fields">
+            <label for="fruit"><b>Select Case Type :</b> </label>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" id='c' #c (click)='updateChart(c)' value="c" name="casetype" checked="" tabindex="0" class="hidden">
+                    <label for='c' >Confirmed</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" value='d' #d (click)='updateChart(d)' id='d' name="casetype" tabindex="0" class="hidden">
+                    <label for='d'>Deaths</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" value='r' #r (click)='updateChart(r)' id='r' name="casetype" tabindex="0" class="hidden">
+                    <label for='r'>Recovered</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input id='a' #a type="radio" (click)='updateChart(a)' value='a' name="casetype" tabindex="0" class="hidden">
+                    <label for='a'>Active</label>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <google-chart [type]='chart.PieChart' [options]='chart.options'  [data]='datatable' style="width: 500px; height: 300px;margin-left: -115px;margin-top: -2px;" ></google-chart>
+
+
+
+    </div> 
+
+    <div id="rightside">
+
+
+
+       <div > <app-map></app-map> </div>  
+
+        <div><app-email></app-email></div>
+
+    </div>
+
+    
+
+  
+
+
+
+
+</div>     
+    
+       
+     
+    

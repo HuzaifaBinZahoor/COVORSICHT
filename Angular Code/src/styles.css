@@ -1,0 +1,175 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    padding: 10px;
+}
+
+
+
+
+.h3, h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+    color:#ff0000;
+}
+
+.ui.statistic>.value, .ui.statistics .statistic>.value {
+    font-size: 2.0rem!important;
+}
+
+.p-3 {
+    padding: 0.2rem !important;
+}
+
+.m-3 {
+    margin: 0rem!important;
+}
+
+.row {
+
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 153px;
+    margin-left: 205px;
+}
+
+.ui.form .inline.fields .field {
+    margin: 0px;
+    padding-top: 50px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: -15.5rem;
+}
+
+
+
+[_nghost-fyi-c20] {
+    width: fit-content;
+    display: block;
+    margin-left: -50px;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(0 0 0 / 90%);
+    font-size: 29px;
+    font-weight: 500;
+    margin-right: 490px;
+}
+
+.bg-light {
+    background-color: #ffcc00 !important;
+}
+
+.navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    margin-top: -10px;
+}
+
+#main_container{
+    position: relative;
+    height: 445px;
+    width: 100%;
+    margin: 0%;
+    margin-top: -14px;
+}
+
+#rightside{
+    position: absolute;
+    height: 420px;
+    float: right;
+    margin-left: 360px;
+    
+}
+
+#leftside{
+    position: absolute;
+    left:20px;
+    height: 445px;
+    width: 250px;
+    margin-left: -8px;
+    padding-left: 20px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.form-control {
+    display: block;
+    width: 130%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}/* You can add global styles to this file, and also import other style files */
+
+label {
+    display: inline-block;
+    margin-bottom: -15.5rem;
+    padding-top: 3px;
+}
+
+
+.containerEmail {
+    position: relative;
+  }
+
+  .toprightEmail {
+    position: absolute;
+    top: 8px;
+    margin-left: 40%;
+  }
+
+  .topleftEmail {
+    position: absolute;
+    top: 8px;
+    left: 15%;
+  }
+
+  .containerMain{
+
+    position: relative;
+    padding-bottom:  80px ;
+
+
+  }
+
+  .topleftTable{
+
+position: absolute;
+  left: 10px;
+  width: 60%;
+
+  }
+
+  .toprightSafe{
+    position: absolute;
+    margin-left:55%;
+    top: 10px;
+
+  }
+
+  
+  
+
+
